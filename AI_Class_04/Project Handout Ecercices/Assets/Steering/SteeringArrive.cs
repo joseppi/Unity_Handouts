@@ -30,13 +30,13 @@ public class SteeringArrive : MonoBehaviour {
         // Calculate the desired acceleration using the velocity we want to achieve and the one we already have
         // Use time_to_target as the time to transition from the current velocity to the desired velocity
         // Clamp the desired acceleration and call move.AccelerateMovement()
-        Vector3 distance = new Vector3(move.transform.position.x - target.x, 0, move.transform.position.z - target.z);
+        float distance = move.transform.position.magnitude - target.magnitude;
         Vector3 desire_vel = new Vector3(move.transform.position.x - target.x, 0, move.transform.position.z - target.z);
         desire_vel.Normalize();
         desire_vel = desire_vel * move.max_mov_velocity;
-        if (distance.x < slow_distance && distance.z < slow_distance)
+        if (distance < slow_distance && distance < slow_distance)
         {
-            if (distance.x <= min_distance && distance.z <= min_distance)
+            if (distance <= min_distance)
             {
                 move.SetMovementVelocity(Vector3.zero);
             }
@@ -55,7 +55,7 @@ public class SteeringArrive : MonoBehaviour {
         // Start slowing down when we get closer to the target
         // Calculate a slow factor (0 to 1 multiplier to desired velocity)
         // Once inside the slow radius, the further we are from it, the slower we go
-        if (distance.x < slow_distance && distance.z < slow_distance)
+        if (distance < slow_distance && distance < slow_distance)
         {
             move.movement.x = move.movement.x * 0.5f;
             move.movement.z = move.movement.z * 0.5f;

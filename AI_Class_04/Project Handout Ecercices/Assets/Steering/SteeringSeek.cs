@@ -4,17 +4,19 @@ using System.Collections;
 public class SteeringSeek : MonoBehaviour {
 
 	Move move;
-
-	// Use this for initialization
-	void Start ()
+    Vector3 enemy;
+    // Use this for initialization
+    void Start()
     {
-		move = GetComponent<Move>();
-	}
+        move = GetComponent<Move>();
+        enemy = new Vector3(0.0f, 0.0f, 3.0f);
+
+    }
 	
 	// Update is called once per frame
 	void Update () 
 	{
-        Steer(move.target.transform.position);
+        //Steer(move.target.transform.position);
 	}
 
 	public void Steer(Vector3 target)
