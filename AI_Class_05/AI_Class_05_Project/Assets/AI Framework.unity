@@ -425,8 +425,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.271926, y: 4.171883, z: 4.6030703}
-  m_Center: {x: 0.06934309, y: 2.0075629, z: 0.2770661}
+  m_Size: {x: 5.271926, y: 4.171883, z: 5.62992}
+  m_Center: {x: 0.06934309, y: 2.0075629, z: 0.25882196}
 --- !u!4 &171258681 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: f698f69d64c51f8438d853e5c274e5fc, type: 3}
@@ -916,6 +916,10 @@ Prefab:
     - target: {fileID: 100002, guid: f698f69d64c51f8438d853e5c274e5fc, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: f698f69d64c51f8438d853e5c274e5fc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f698f69d64c51f8438d853e5c274e5fc, type: 3}
@@ -2491,7 +2495,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11416896, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11499750, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: falloff.m_Curve.Array.data[0].inSlope
@@ -2532,6 +2536,10 @@ Prefab:
     - target: {fileID: 11497132, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: avoid_distance
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11427684, guid: 77aab66f3904942bab33067e31d9d228, type: 2}

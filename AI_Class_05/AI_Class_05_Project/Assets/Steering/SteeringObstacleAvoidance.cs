@@ -6,13 +6,14 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
 	public LayerMask mask;
 	public float avoid_distance = 5.0f;
     public static Ray raycast;
-    
 
+    Object building;
 	Move move;
 	SteeringSeek seek;
+    RaycastHit hit;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		move = GetComponent<Move>(); 
 		seek = GetComponent<SteeringSeek>();
 
@@ -27,15 +28,22 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
         // 2- Calculate a quaternion with rotation based on movement vector
         // 3- Cast all rays. If one hit, get away from that surface using the hitpoint and normal info
         // 4- Make sure there is debug draw for all rays (below in OnDrawGizmosSelected)
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        
+        raycast.origin = transform.position;
+        raycast.direction.Set(move.movement.x+3, 0, move.movement.z);
 
-        if (Physics.Raycast(transform.position, fwd, 10))
+
+        if (Physics.Raycast(transform.position, move.movement.normalized * avoid_distance, mask) ||
+            Physics.Raycast(transform.position,  raycast.direction * avoid_distance, mask))
+        {
             print("There is something in front of the object!");
-
-        raycast.origin.Set(move.transform.position.x, move.transform.position.y, move.transform.position.z);
-        Vector3 ray_dir = new Vector3(move.movement.x, move.movement.y, move.movement.z);
-        raycast.direction.Set(ray_dir.x,ray_dir.y,ray_dir.z);
-        Physics.Raycast(transform.position, Vector3.forward, mask);
+            Vector3 collision_normal;
+            collision_normal.x = hit.normal.x*avoid_distance;
+            collision_normal.y = 0.0f;
+            collision_normal.z = hit.normal.z*avoid_distance;
+            seek.Steer(collision_normal);
+        }
+       
 
 
     }
