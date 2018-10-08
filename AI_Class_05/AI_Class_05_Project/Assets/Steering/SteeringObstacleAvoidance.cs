@@ -33,8 +33,7 @@ public class SteeringObstacleAvoidance : MonoBehaviour {
         raycast.direction.Set(move.movement.x+3, 0, move.movement.z);
 
 
-        if (Physics.Raycast(transform.position, move.movement.normalized * avoid_distance, mask) ||
-            Physics.Raycast(transform.position,  raycast.direction * avoid_distance, mask))
+        if (Physics.Raycast(transform.position, move.movement.normalized * avoid_distance, mask))
         {
             print("There is something in front of the object!");
             Vector3 collision_normal;
