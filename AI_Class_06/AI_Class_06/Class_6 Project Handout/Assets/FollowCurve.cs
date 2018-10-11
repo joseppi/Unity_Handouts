@@ -28,11 +28,11 @@ public class FollowCurve : MonoBehaviour
         // Increase the ratio [0 to 1] and set the GameObject position to the respecive point in the curve
 
 
-        transform.position = curve_math.CalcPositionByDistanceRatio(ratio);
-        ratio = ratio + 0.01f;
-        if (ratio >= 1)
+        transform.position = curve_math.CalcPositionByDistanceRatio(currentRatio);
+        currentRatio = currentRatio + 0.01f;
+        if (currentRatio >= 1)
         {
-            ratio = 0;
+            currentRatio = 0;
         }
     }
 }
