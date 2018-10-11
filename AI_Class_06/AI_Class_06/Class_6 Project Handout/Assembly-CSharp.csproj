@@ -88,6 +88,7 @@
     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveFormulas.cs" />
     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurvePoint.cs" />
     <Compile Include="Assets\BansheeGz\BGCurve\Scripts\Curve\BGCurveSettings.cs" />
+    <Compile Include="Assets\CoordinatingBehaveour.cs" />
     <Compile Include="Assets\FollowCurve.cs" />
     <Compile Include="Assets\Kinematic\KinematicArrive.cs" />
     <Compile Include="Assets\Kinematic\KinematicFaceMovement.cs" />

@@ -5,7 +5,7 @@ using BansheeGz.BGSpline.Components;
 
 [RequireComponent(typeof(BGCcMath))]
 
-public class FollowCurve : MonoBehaviour
+public class FollowCurve : CoordinatingBehaveour
 {
     float currentRatio = 0.0f;
     public BGCcMath curve_math;
@@ -26,7 +26,6 @@ public class FollowCurve : MonoBehaviour
     {
         // TODO 1: Have a GameObject that follows the curve's path
         // Increase the ratio [0 to 1] and set the GameObject position to the respecive point in the curve
-
 
         transform.position = curve_math.CalcPositionByDistanceRatio(currentRatio);
         currentRatio = currentRatio + 0.01f;
