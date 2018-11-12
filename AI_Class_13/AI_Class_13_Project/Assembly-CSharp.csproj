@@ -515,16 +515,16 @@
     <None Include="Assets\BansheeGz\BGCurve\readme.txt" />
     <None Include="Assets\ParadoxNotion\NodeCanvas\Framework\_Commons\Runtime\Serialization\_LICENSE - FULL SERIALIZER.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/josepps14/Documents/GitHub/Unity_Handouts/AI_Class_12/AI_Class_13_Project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/josepps14/Documents/GitHub/Unity_Handouts/AI_Class_13/AI_Class_13_Project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/josepps14/Documents/GitHub/Unity_Handouts/AI_Class_12/AI_Class_13_Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/josepps14/Documents/GitHub/Unity_Handouts/AI_Class_13/AI_Class_13_Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/josepps14/Documents/GitHub/Unity_Handouts/AI_Class_12/AI_Class_13_Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/josepps14/Documents/GitHub/Unity_Handouts/AI_Class_13/AI_Class_13_Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/josepps14/Documents/GitHub/Unity_Handouts/AI_Class_12/AI_Class_13_Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/josepps14/Documents/GitHub/Unity_Handouts/AI_Class_13/AI_Class_13_Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
