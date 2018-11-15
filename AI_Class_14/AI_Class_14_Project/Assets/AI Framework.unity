@@ -2249,6 +2249,7 @@ GameObject:
   - component: {fileID: 925723629}
   - component: {fileID: 925723631}
   - component: {fileID: 925723630}
+  - component: {fileID: 925723632}
   m_Layer: 8
   m_Name: Patrol 1
   m_TagString: Untagged
@@ -2531,7 +2532,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 925723620}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a7dbb6bbdf4ffb46ab7dd87ba8191e7, type: 3}
   m_Name: 
@@ -2540,7 +2541,24 @@ MonoBehaviour:
   boundGraphObjectReferences: []
   enableAction: 0
   disableAction: 0
-  _graph: {fileID: 11400000, guid: b40f817efc49ec549a66cfb972a13cfa, type: 2}
+  _graph: {fileID: 11400000, guid: 0b8864619218bf14fada7a04b0aa4a7c, type: 2}
+  _blackboard: {fileID: 925723630}
+--- !u!114 &925723632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925723620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad115aca74ce3c4891b3f6de0b4aae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boundGraphSerialization: 
+  boundGraphObjectReferences: []
+  enableAction: 0
+  disableAction: 0
+  _graph: {fileID: 11400000, guid: 4457df190197aea40a1cbe110099522d, type: 2}
   _blackboard: {fileID: 925723630}
 --- !u!1 &960830319
 GameObject:
