@@ -1,4 +1,4 @@
 sceneSetups:
-- path: C:/Users/josepps14/Documents/GitHub/farming-joy/Assets/Farm.unity
+- path: Assets/AI Framework.unity
   isLoaded: 1
   isActive: 1

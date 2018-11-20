@@ -14,7 +14,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 43
+    y: 51
     width: 1680
     height: 1007
   m_ShowMode: 4
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 12
+  controlID: 65
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_MinSize: {x: 817, y: 492}
   m_MaxSize: {x: 22012, y: 14042}
   vertical: 0
-  controlID: 11
+  controlID: 110
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1062
-    y: 92
+    y: 100
     width: 311
     height: 936
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -408,29 +408,29 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 828
-    y: 92
+    y: 100
     width: 230
     height: 457
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa610000
-    m_LastClickedID: 25002
-    m_ExpandedIDs: 46bdffff9ec1ffffa0c1ffffa6c1ffffb2c1ffffb4c1ffffbac1ffffc0c1ffffc2c1ffffc4c1ffffc6c1ffffd0c1ffffd6c1ffffd8c1ffffdec1ffffeac1ffff52efffff00000000d0600000aa610000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 74d7ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: TankTurret
-      m_OriginalName: TankTurret
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 25088
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -454,14 +454,14 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Debug
+    m_Text: Inspector
     m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 1377
-    y: 92
+    y: 100
     width: 303
     height: 936
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 828
-    y: 570
+    y: 578
     width: 230
     height: 458
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -510,20 +510,19 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\josepps14\Documents\GitHub\Unity_Handouts\AI_Class_12\AI_Class_12_Project
+  m_LastProjectPath: D:\Documents\GitHub\Unity_Handouts\AI_Class_12\AI_Class_12_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 48090000
     m_LastClickedID: 2376
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000038390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -551,21 +550,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000072310000
+    m_ExpandedIDs: ffffffff0000000038390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: AI Framework
-      m_OriginalName: AI Framework
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 24740
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -627,7 +626,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 92
+    y: 100
     width: 824
     height: 936
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -748,7 +747,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.5857119, y: -0.009729329, z: 0.007031417, w: 0.81043094}
     speed: 2
-    m_Value: {x: 0.58571166, y: -0.009729325, z: 0.0070314147, w: 0.81043065}
+    m_Value: {x: -0.5857119, y: 0.009729329, z: -0.0070314175, w: -0.81043094}
   m_Size:
     m_Target: 129.01067
     speed: 2

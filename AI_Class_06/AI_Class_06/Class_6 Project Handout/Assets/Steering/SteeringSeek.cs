@@ -1,21 +1,36 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class SteeringSeek : CoordinatingBehaveour
 {
 
 	Move move;
-
+    private NavMeshPath path;
+    private float elapsed = 0.0f;
 	// Use this for initialization
 	void Start () {
-		move = GetComponent<Move>(); 
-	}
+		move = GetComponent<Move>();
+        path = new NavMeshPath();
+        elapsed = 0.0f;
+    }
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		Steer(move.target.transform.position);
-	}
+        elapsed += Time.deltaTime;
+
+        if (elapsed > 1.0f)
+        {
+            elapsed -= 1.0f;
+            NavMesh.CalculatePath(transform.position, move.target.transform.position, NavMesh.AllAreas, path);
+        }
+        for (int i = 0; i < path.corners.Length - 1; i++)
+        {
+            Debug.DrawLine(path.corners[i], path.corners[i + 1], Color.red);
+            Steer(path.corners[i]);
+        }           
+    }
 
 	public void Steer(Vector3 target)
 	{
