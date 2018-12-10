@@ -1,0 +1,29 @@
+Rob_Cowboy:
+
+Idle -> 1, 200
+Run -> 211, 227
+WalkBack -> 986, 1006
+
+
+
+Rob_Viking:
+
+Idle -> 1, 180
+Run -> 190, 209
+WalkBack -> 802, 821
+
+
+
+Sally_Cowgirl:
+
+Idle -> 2, 200
+Run -> 405, 422
+WalkBack -> 1031, 1049
+
+
+
+Sally_Ninja:
+
+Idle -> 2, 160
+Run -> 200, 211
+WalkBack -> 1335, 1354
